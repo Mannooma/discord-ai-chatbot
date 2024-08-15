@@ -19,8 +19,8 @@ client.once('ready', () => {
   console.log(`discord.gg/dis-sh`);
   client.user.setStatus("dnd");
   client.user.setActivity({
-    name: 'Shadow Community Server'
-    type: 
+    name: 'Shadow Community Server',
+    type: ActivityType.Watching
   })
 
 
