@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, MessageAttachment } = require('discord.js');
+const { Client, GatewayIntentBits, MessageAttachment, ActivityType } = require('discord.js');
 const { Hercai } = require('hercai');
 const Tesseract = require('tesseract.js');
 const fetch = require('node-fetch');
@@ -15,8 +15,15 @@ const client = new Client({
 
 client.once('ready', () => {
   console.log(`bot is ready! ${client.user.tag}!`);
-  console.log(`Code by Wick Studio`);
-  console.log(`discord.gg/wicks`);
+  console.log(`Code by Mony`);
+  console.log(`discord.gg/dis-sh`);
+  client.user.setStatus("dnd");
+  client.user.setActivity({
+    name: 'Shadow Community Server'
+    type: 
+  })
+
+
 });
 
 async function extractTextFromImage(url) {
