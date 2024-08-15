@@ -2,6 +2,7 @@ const { Client, GatewayIntentBits, MessageAttachment, ActivityType } = require('
 const { Hercai } = require('hercai');
 const Tesseract = require('tesseract.js');
 const fetch = require('node-fetch');
+const keep_alive = require('./keep_alive.js')
 const { allowed_channel_ids, token, image2textChannels } = require('./config.json');
 
 const herc = new Hercai();
